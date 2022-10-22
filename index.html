@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Counting Numbers</title>
+</head>
+<body>
+    <header>
+        <h1>Counting Numbers</h1>
+    </header>
+
+    <section>
+        <div id="form">
+            <p> Início:
+                <label for=""></label>
+                <input type="number" id="iinicio" min="0" name="inicio" required>
+            </p>
+
+            <p> Fim:
+                <label for=""></label>
+                <input type="number" id="ifim" min="0" name="fim" required>
+            </p>
+
+            <p> Passo:
+                <label for=""></label>
+                <input type="number" id="ipasso" min="0" name="passo" required>
+            </p>
+
+            <p><input type="button" onclick="justCounting()" id="botaoenvio" value="Verificar"></p>
+        </div>
+
+        <div id="contas">
+            <!-- Quem sou eu? // Eu poderia fazer um calculando com reticências animadas -->
+        </div>
+    </section>
+
+    <footer>
+        <p>Desenvolvido por Um Estudante Medíocre</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
