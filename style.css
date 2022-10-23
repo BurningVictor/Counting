@@ -12,6 +12,7 @@ body {
     height: 100vh;
     background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header {
@@ -29,7 +30,8 @@ section {
     width: 520px;
     /*height: 500px;*/
     background: white;
-    padding: 15px;
+    padding: 10px;
+    padding-top: 1px;
     border-radius: 15px;
     margin: auto;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.253);
@@ -45,7 +47,8 @@ section div {
 
 div#form {
     margin: 15px;
-    margin-bottom: 5px;
+    
+    margin-bottom: 0px;
 }
 
 div#form p {
@@ -69,10 +72,6 @@ p > input#botaoenvio:hover {
     transition: 5s;
 }
 
-label {
-    font-weight: normal;
-}
-
 footer {
     padding: 15px;
     text-align: center;
@@ -81,11 +80,39 @@ footer {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.253);
 }
 
-img {
-    display: inline-block;
-    width: 220px;
-    border-radius: 50%;
-    margin-top: 30px;
-    border: 5px solid black;
-    padding: 5px;
+/* Barra de Rolagem */
+::-webkit-scrollbar-track {
+    background-color: hsla(304, 52%, 55%, 0.60);
+    border-radius: 10px;
+    width: 8px;
+}
+
+::-webkit-scrollbar {
+    background-color: #FFCC70;
+    border-radius: 10px;
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #4158D0;
+    border-radius: 10px;
+    width: 8px;
+}
+
+/* --------------------------- */
+
+div#contas {
+    font-size: 1.25em;
+    margin-top: -10px ;
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow: auto;
+    max-height: 300px;
+    text-align: justify;
+    /*word-wrap: break-word;*/
+}
+
+div#contas > p{
+    font-size: 1.3em;
+    text-align: center;
 }
