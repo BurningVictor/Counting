@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleada.css">
+    <title>Tabuada</title>
+</head>
+<body>
+    <header>
+        <h1>Tabuada</h1>
+    </header>
+
+    <section>
+        <div id="form">
+            <p> Número:
+                <label for=""></label>
+                <input type="number" id="inum" min="0" name="inicio" required>
+            </p>
+
+            <p><input type="button" onclick="tabuada()" id="botaoenvio" value="Gerar Tabuada"></p>
+        </div>
+
+        <div>
+            <select name="tabuada" id="tabuada" size="15">
+                <option value=""></option>
+            </select>
+        </div>
+    </section>
+    
+    <a href="../index.html" id="contlink">
+        <h2>Acesse o Contador!</h2>
+    </a>
+
+    <footer>
+        <p>Desenvolvido por Um Estudante Medíocre</p>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script src="../animar.js" defer></script>
+    <script crossorigin="anonymous" src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js" defer></script>
+</body>
+</html>

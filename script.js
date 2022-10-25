@@ -56,6 +56,47 @@ function justCounting(){
     }  
 }
 
+function tabuada() {
+    var num = window.document.querySelector('input#inum')
+    var n = Number(num.value)
+    var c = 1
+    
+
+    while (c<=10) {
+        var msg = document.createElement('option')
+        msg.innerTextHTML = `${n} x ${c} = ${n*c}`
+        msg.appendChild(item)
+        c++
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 function justCounting(){
     var inicio = window.document.querySelector('input#iinicio') // Início
