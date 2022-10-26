@@ -107,13 +107,13 @@ div#contas {
     padding: 10px;
     margin-bottom: 10px;
     overflow: auto;
-    max-height: 300px;
+    max-height: 250px;
     text-align: justify;
     /*word-wrap: break-word;*/
 }
 
 div#contas > p{
-    font-size: 1.3em;
+    font-size: 1.1em;
     text-align: center;
 }
 

@@ -18,6 +18,7 @@ function justCounting(){
 
     } else if (passo.value.length == 0 || Number(passo.value)==0 || p<=0) {
         window.alert ('[Erro] Considamos o passo como 1!')
+        con.innerHTML = ""
         if (f>c){
             while (c<=f) {
                 con.innerHTML += `${c}... `
@@ -38,6 +39,7 @@ function justCounting(){
     //--------------------------------------------------------------
     
     else {
+        con.innerHTML = ""
         con.innerHTML = `<strong>Contados!<strong><br>`
         
         if (f>c){
@@ -56,17 +58,24 @@ function justCounting(){
     }  
 }
 
+//-------------------------------------------------------------------// Tabuada
+
 function tabuada() {
     var num = window.document.querySelector('input#inum')
+    var tabuada = window.document.querySelector('select#tabuada')
     var n = Number(num.value)
     var c = 1
     
-
-    while (c<=10) {
-        var msg = document.createElement('option')
-        msg.innerTextHTML = `${n} x ${c} = ${n*c}`
-        msg.appendChild(item)
-        c++
+    if (num.value.length == 0) {
+        window.alert('[ERRO!] Tente digitar algum número...')
+    } else {
+        tabuada.innerHTML = ""
+        while (c<=10) {
+            var msg = document.createElement('option') 
+            msg.innerHTML = `${n} x ${c} =<strong> ${n*c} <strong>`
+            tabuada.appendChild(msg)
+            c++
+        }
     }
 }
 
