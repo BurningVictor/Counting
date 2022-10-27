@@ -56,7 +56,7 @@ div#form p {
     font-weight: bolder;
 }
 
-p > input#botaoenvio {
+p > input.botaoenvio {
     width: 200px;
     height: 40px;
     text-align: center;
@@ -67,7 +67,7 @@ p > input#botaoenvio {
     border: 2px solid rgb(32, 1, 32);
 }
 
-p > input#botaoenvio:hover { 
+p > input.botaoenvio:hover { 
     background: linear-gradient(90deg, hsla(171, 87%, 67%, 0.5) 0%, hsla(236, 100%, 72%, 0.5) 100%);
     transition: 5s;
 }
@@ -82,7 +82,7 @@ footer {
 }
 
 /* Barra de Rolagem */
-::-webkit-scrollbar-track {
+/*::-webkit-scrollbar-track {
     background-color: hsla(171, 87%, 67%, 1) 0%;
     border-radius: 10px;
     width: 8px;
@@ -99,12 +99,12 @@ footer {
     border-radius: 10px;
     width: 8px;
 }
-
+*/
 /* --------------------------- */
 
 div#contas {
-    font-size: 1.25em;
-    margin-top: -10px ;
+    font-size: 1.2em;
+    margin-top: 10px ;
     padding: 10px;
     margin-bottom: 10px;
     overflow: auto;
@@ -114,7 +114,7 @@ div#contas {
 }
 
 div#contas > p{
-    font-size: 1.3em;
+    font-size: 1.2em;
     text-align: center;
 }
 
@@ -184,14 +184,15 @@ div select {
 }
 
 select {
-    width: 100%;
+    width: 70%;
     margin: auto;
     text-align: center;
     align-items: center;
+    margin-bottom: 12px;
 }
 
 option {
     text-align: center;
-    font-size: 1.4em;
+    font-size: 1.1em;
 }
 

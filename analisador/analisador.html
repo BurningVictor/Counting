@@ -19,17 +19,19 @@
                 <input type="number" id="inum" min="0" name="inicio" required>
             </p>
 
-            <p><input type="button" onclick="verificador()" id="botaoenvio" value="Verificar"></p>
+            <p><input type="button" onclick="adicionar()" class="botaoenvio" value="Adicionar"></p>
             
         </div>
 
         <div>
-            <select name="analisador" id="analisador" size="12">
-                <option value=""></option>
+            <select name="analisador" id="analisador" size="8">
+                
             </select>
         </div>
         
-        <p><input type="button" onclick="analisador()" id="botaoenvio" value="Verificar"></p>
+        <p><input type="button" onclick="analisar()" class="botaoenvio" value="Analisar"></p>
+
+        <div id="contas"></div>
     </section>
     
     <div id="links">
