@@ -106,6 +106,8 @@ function tabuada() {
 
 
 
+
+
 /*
 function justCounting(){
     var inicio = window.document.querySelector('input#iinicio') // Início

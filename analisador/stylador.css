@@ -10,7 +10,7 @@
 body {
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    background: linear-gradient(90deg, hsla(171, 87%, 67%, 1) 0%, hsla(236, 100%, 72%, 1) 100%);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -61,18 +61,19 @@ p > input#botaoenvio {
     height: 40px;
     text-align: center;
     font-weight: bolder;
-    background: linear-gradient(43deg, hsla(230, 60%, 54%, 0.247) 0%, hsla(304, 52%, 55%, 0.25) 46%, hsla(39, 100%, 72%, 0.25) 100%);
+    background: linear-gradient(90deg, hsla(171, 87%, 67%, 0.25) 0%, hsla(236, 100%, 72%, 0.25) 100%);
     cursor: pointer;
     border-radius: 10px;
     border: 2px solid rgb(32, 1, 32);
 }
 
 p > input#botaoenvio:hover { 
-    background: linear-gradient(43deg, hsla(230, 60%, 54%, 0.50) 0%, hsla(304, 52%, 55%, 0.5) 46%, hsla(39, 100%, 72%, 0.5) 100%);
+    background: linear-gradient(90deg, hsla(171, 87%, 67%, 0.5) 0%, hsla(236, 100%, 72%, 0.5) 100%);
     transition: 5s;
 }
 
 footer {
+    display: block;
     padding: 15px;
     text-align: center;
     color: white;
@@ -82,19 +83,19 @@ footer {
 
 /* Barra de Rolagem */
 ::-webkit-scrollbar-track {
-    background-color: hsla(304, 52%, 55%, 0.60);
+    background-color: hsla(171, 87%, 67%, 1) 0%;
     border-radius: 10px;
     width: 8px;
 }
 
 ::-webkit-scrollbar {
-    background-color: #FFCC70;
+    background-color: hsla(171, 87%, 67%, 1) 0%;
     border-radius: 10px;
     width: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #4158D0;
+    background-color: hsla(236, 100%, 72%, 1) 100%;
     border-radius: 10px;
     width: 8px;
 }
@@ -107,13 +108,13 @@ div#contas {
     padding: 10px;
     margin-bottom: 10px;
     overflow: auto;
-    max-height: 250px;
+    max-height: 300px;
     text-align: justify;
     /*word-wrap: break-word;*/
 }
 
 div#contas > p{
-    font-size: 1.1em;
+    font-size: 1.3em;
     text-align: center;
 }
 
@@ -139,12 +140,12 @@ a#contlink {
 }
 
 a#contlink:hover {
-    background: rgb(73, 6, 73);
+    background: rgb(29, 6, 73);
     color: white;
     border: 2px solid white;
 }
 
-a#analink {
+a#tablink {
     display: block;
     float: right;
     margin: auto;
@@ -164,7 +165,7 @@ a#analink {
     transition-timing-function: ease;
 }
 
-a#analink:hover {
+a#tablink:hover {
     background: rgb(29, 6, 73);
     color: white;
     border: 2px solid white;
@@ -175,5 +176,22 @@ div#links {
     margin: auto;
     width: fit-content;
     align-items: center;
+}
+
+/*------------------------------------*/
+div select {
+    margin-top: -10px;
+}
+
+select {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+}
+
+option {
+    text-align: center;
+    font-size: 1.4em;
 }
 

@@ -4,37 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styleada.css">
-    <title>Tabuada</title>
+    <link rel="stylesheet" href="stylador.css">
+    <title>Analisador de Contas</title>
 </head>
 <body>
     <header>
-        <h1>Tabuada</h1>
+        <h1>Analisador de Valores</h1>
     </header>
 
     <section>
         <div id="form">
-            <p> Número:
+            <p> Números (de 1 a 100):
                 <label for=""></label>
                 <input type="number" id="inum" min="0" name="inicio" required>
             </p>
 
-            <p><input type="button" onclick="tabuada()" id="botaoenvio" value="Gerar Tabuada"></p>
+            <p><input type="button" onclick="verificador()" id="botaoenvio" value="Verificar"></p>
+            
         </div>
 
         <div>
-            <select name="tabuada" id="tabuada" size="10">
+            <select name="analisador" id="analisador" size="12">
                 <option value=""></option>
             </select>
         </div>
+        
+        <p><input type="button" onclick="analisador()" id="botaoenvio" value="Verificar"></p>
     </section>
     
     <div id="links">
         <a href="../index.html" id="contlink">
             <h2>Acesse o Contador!</h2>
         </a>
-        <a href="../analisador/analisador.html" id="analink">
-            <h2>Acesse o Analisador!</h2>
+
+        <a href="../tabuada/tabuda.html" id="tablink">
+            <h2>Acesse a Tabuada!</h2>
         </a>
     </div>
 
@@ -43,7 +47,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script src="../animar.js" defer></script>
-    <script crossorigin="anonymous" src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js" defer></script>
 </body>
 </html>
